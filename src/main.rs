@@ -17,5 +17,12 @@ struct Joke {
 
 // More like get observation lol
 async fn get_joke() -> Json<Vec<Joke>> {
-    let random_json 
+    let json_content = fs::read_to_string("jokes.json")
+        .expect("Could not read jokes.json or jokes.json doesn't exist!");
+    
+    // Parse the JSON into joke 
+    let jokes: Vec<Joke> = serde_json::from_str(&json_content)
+        .expect("JSON was not formatted correctly"); 
+    
+    Json(jokes)
 }
