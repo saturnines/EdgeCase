@@ -1,7 +1,7 @@
 # EdgeCase
 
 
-A collection of "jokes".
+A collection of esoteric "jokes".
 
 
 ## About
@@ -33,4 +33,4 @@ For now just read jokes.json
 
 
 ## License 
-MIT License - Feel free to use these observations during your next architecture review or meeting when someone suggests migrating everything to Kubernetes because it 'worked' at their last job.
+MIT License - Feel free to use/think about these observations during your next architecture review or meeting when someone suggests migrating everything to Kubernetes because it 'worked' at their last job.
