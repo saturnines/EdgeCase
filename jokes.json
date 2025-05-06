@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "contributor": "",
+    "joke": "OAuth is secure because neither the users or the developers understand how it works.",
+    "punchline": ""
+  },
+  {
+    "id": 2,
+    "contributor": "",
+    "joke": "Netflix is a monitoring system and an operation platform that occasionally streams video.",
+    "punchline": ""
+  },
+  {
+    "id": 3,
+    "contributor": "",
+    "joke": "Microservices are just distributed monoliths with better marketing and worse debugging.",
+    "punchline": ""
+  },
+  {
+    "id": 4,
+    "contributor": "",
+    "joke": "The most secure part of any encryption system is the developers belief that their users will follow best practices.",
+    "punchline": ""
+  },
+  {
+    "id": 5,
+    "contributor": "",
+    "joke": "AWS isn't a cloud provider, it's a creative writing workshop where all assignments involve explaining unexpected billing charges.",
+    "punchline": ""
+  },
+  {
+    "id": 6,
+    "contributor": "",
+    "joke": "Docker's greatest achievement was convincing developers that packaging an entire operating system with your app is the minimalist approach.",
+    "punchline": ""
+  },
+  {
+    "id": 7,
+    "contributor": "",
+    "joke": "The cloud is just someone else's computer that goes down during your demo.",
+    "punchline": ""
+  },
+  {
+    "id": 8,
+    "contributor": "",
+    "joke": "Byzantine fault tolerance is preparing for scenarios where your servers are actively plotting against you.",
+    "punchline": ""
+  },
+  {
+    "id": 9,
+    "contributor": "",
+    "joke": "CAP theorem says you can have two out of three guarantees, but in production, you're lucky to get one.",
+    "punchline": ""
+  },
+  {
+    "id": 10,
+    "contributor": "",
+    "joke": "Race conditions are the quantum mechanics of programming, things are in superposition until somebody observes the bug.",
+    "punchline": ""
+  },
+  {
+    "id": 11,
+    "contributor": "",
+    "joke": "\"Eventual consistency\" means \"it's wrong now, but will be right after the demo.\"",
+    "punchline": ""
+  },
+  {
+    "id": 12,
+    "contributor": "",
+    "joke": "Legacy code is a euphemism for \"it makes money so we can't delete it.\"",
+    "punchline": ""
+  },
+  {
+    "id": 13,
+    "contributor": "",
+    "joke": "The only thing learned from incident postmortems is how to better cover your tracks next time.",
+    "punchline": ""
+  },
+  {
+    "id": 14,
+    "contributor": "",
+    "joke": "Heisenbug: when observing the bug fixes it, and not observing it crashes production.",
+    "punchline": ""
+  },
+  {
+    "id": 15,
+    "contributor": "",
+    "joke": "RESTful API: Because sometimes you need six different endpoints to retrieve data that used to be in one SQL query.",
+    "punchline": ""
+  },
+  {
+    "id": 16,
+    "contributor": "",
+    "joke": "The term \"fully automated CI/CD pipeline\" actually means \"Jenkins is going to break at 4:59 PM on Friday.\"",
+    "punchline": ""
+  },
+  {
+    "id": 17,
+    "contributor": "",
+    "joke": "The P in PHP stands for \"Please stop using this for new projects.\"",
+    "punchline": ""
+  },
+  {
+    "id": 18,
+    "contributor": "",
+    "joke": "NoSQL is for developers who found learning SQL too difficult, so they invented something more complicated instead.",
+    "punchline": ""
+  },
+  {
+    "id": 19,
+    "contributor": "",
+    "joke": "Python developers brag about readability while writing list comprehensions that look like someone's cat walked on the keyboard.",
+    "punchline": ""
+  },
+  {
+    "id": 20,
+    "contributor": "",
+    "joke": "\"Database sharding\" is architecturespeak for \"Our original design was terrible but we have too much VC money to start over.\"",
+    "punchline": ""
+  },
+  {
+    "id": 21,
+    "contributor": "",
+    "joke": "Pair programming is a technique where two developers can create the same bugs twice as expensively.",
+    "punchline": ""
+  },
+  {
+    "id": 22,
+    "contributor": "",
+    "joke": "All \"distributed systems\" really are just Postgres doing the heavy lifting.",
+    "punchline": ""
+  },
+  {
+    "id": 23,
+    "contributor": "",
+    "joke": "True 10x devs are engineers who know when not to build things.",
+    "punchline": ""
+  },
+  {
+    "id": 24,
+    "contributor": "",
+    "joke": "\"The main use case for Kubernetes is to keep your infra team too busy to notice that your app could run on a single VM.\"",
+    "punchline": ""
+  },
+  {
+    "id": 25,
+    "contributor": "",
+    "joke": "WebSockets exist solely to create race conditions too subtle to reproduce in your local environment.",
+    "punchline": ""
+  },
+  {
+    "id": 26,
+    "contributor": "",
+    "joke": "Monorepos are what happens when your organization is too dysfunctional to coordinate across multiple repositories.",
+    "punchline": ""
+  },
+  {
+    "id": 27,
+    "contributor": "",
+    "joke": "The primary function of JIRA is to generate enough metrics to justify the continued employment of project managers.",
+    "punchline": ""
+  },
+  {
+    "id": 28,
+    "contributor": "",
+    "joke": "Kafka is just a message queue with enough complexity to ensure your entire data engineering team is too busy debugging to notice they could have used a database.",
+    "punchline": ""
+  },
+  {
+    "id": 29,
+    "contributor": "",
+    "joke": "Apache Spark exists to make Hadoop seem user-friendly by comparison.",
+    "punchline": ""
+  },
+  {
+    "id": 30,
+    "contributor": "",
+    "joke": "Elasticsearch is where developers go when they want the performance of NoSQL with the query complexity of SQL and the operational stability of neither.",
+    "punchline": ""
+  },
+  {
+    "id": 31,
+    "contributor": "",
+    "joke": "Redis is a database for developers who want the thrill of losing all their data when the server restarts.",
+    "punchline": ""
+  },
+  {
+    "id": 32,
+    "contributor": "",
+    "joke": "RabbitMQ is what you implement before realizing that your actual scaling problem is your architecture, not your message queue.",
+    "punchline": ""
+  },
+  {
+    "id": 33,
+    "contributor": "",
+    "joke": "\"Real-time data processing\" means your batch jobs now fail in real-time instead of overnight.",
+    "punchline": ""
+  },
+  {
+    "id": 34,
+    "contributor": "",
+    "joke": "\"Schema on write\" vs \"schema on read\" is just choosing whether you want your data quality problems now or later.",
+    "punchline": ""
+  },
+  {
+    "id": 35,
+    "contributor": "",
+    "joke": "Prometheus is an excellent tool for collecting metrics about all the ways your system is failing without giving you enough context to fix anything.",
+    "punchline": ""
+  },
+  {
+    "id": 36,
+    "contributor": "",
+    "joke": "Grafana dashboards are beautiful visualizations of data that nobody looks at until after the production outage.",
+    "punchline": ""
+  },
+  {
+    "id": 37,
+    "contributor": "",
+    "joke": "GitLab CI is what happens when your version control system gets tired of just storing code and decides it wants to break your builds too.",
+    "punchline": ""
+  },
+  {
+    "id": 38,
+    "contributor": "",
+    "joke": "Terraform is infrastructure-as-code for people who want their infrastructure to break in new and exciting ways with each version upgrade.",
+    "punchline": ""
+  },
+  {
+    "id": 39,
+    "contributor": "",
+    "joke": "Salesforce is just Excel with a significantly higher price tag and more consultants.",
+    "punchline": ""
+  },
+  {
+    "id": 40,
+    "contributor": "",
+    "joke": "Datadog is what you implement when you want to pay more for monitoring than the actual infrastructure being monitored.",
+    "punchline": ""
+  },
+  {
+    "id": 41,
+    "contributor": "",
+    "joke": "Your observability stack is probably so comprehensive that you now spend more time monitoring your monitoring systems than your actual application.",
+    "punchline": ""
+  },
+  {
+    "id": 42,
+    "contributor": "",
+    "joke": "Code comments are like middle management, when they're good, they clarify everything, and when they're bad, they actively mislead while adding no value.",
+    "punchline": ""
+  },
+  {
+    "id": 43,
+    "contributor": "",
+    "joke": "Azure DevOps: making you feel productive right up until the mystery pipeline failure eats your weekend.",
+    "punchline": ""
+  },
+  {
+    "id": 44,
+    "contributor": "",
+    "joke": "GCP's console is designed to ensure you can never find the same feature twice, keeping cloud engineers in a constant state of humility.",
+    "punchline": ""
+  },
+  {
+    "id": 45,
+    "contributor": "",
+    "joke": "Most incident response plans are so detailed it has everything except what actually goes wrong in production.",
+    "punchline": ""
+  },
+  {
+    "id": 46,
+    "contributor": "",
+    "joke": "Production hotfixes are usually bugs you haven't had time to properly document yet.",
+    "punchline": ""
+  },
+  {
+    "id": 47,
+    "contributor": "",
+    "joke": "Canary deployments are just a way to ensure that only a subset of your customers hate you at any given time.",
+    "punchline": ""
+  },
+  {
+    "id": 48,
+    "contributor": "",
+    "joke": "Database migrations are just professionally sanctioned games of Russian roulette with production data.",
+    "punchline": ""
+  },
+  {
+    "id": 49,
+    "contributor": "",
+    "joke": "Containers solve the \"works on my machine\" problem by making it everyone's problem.",
+    "punchline": ""
+  },
+  {
+    "id": 50,
+    "contributor": "",
+    "joke": "Zero downtime deployments are technically accurate - the downtime comes after the deployment when everything breaks.",
+    "punchline": ""
+  }
+]
