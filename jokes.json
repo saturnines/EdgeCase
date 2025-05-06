@@ -140,7 +140,7 @@
   {
     "id": 24,
     "contributor": "",
-    "joke": "\"The main use case for Kubernetes is to keep your infra team too busy to notice that your app could run on a single VM.\"",
+    "joke": "The main use case for Kubernetes is to keep your infra team too busy to notice that your app could run on a single VM.",
     "punchline": ""
   },
   {
@@ -170,7 +170,7 @@
   {
     "id": 29,
     "contributor": "",
-    "joke": "Apache Spark exists to make Hadoop seem user-friendly by comparison.",
+    "joke": "Apache Spark exists to make Hadoop seem user friendly by comparison.",
     "punchline": ""
   },
   {
@@ -194,7 +194,7 @@
   {
     "id": 33,
     "contributor": "",
-    "joke": "\"Real-time data processing\" means your batch jobs now fail in real-time instead of overnight.",
+    "joke": "\"Real time data processing\" means your batch jobs now fail in real-time instead of overnight.",
     "punchline": ""
   },
   {
@@ -296,7 +296,7 @@
   {
     "id": 50,
     "contributor": "",
-    "joke": "Zero downtime deployments are technically accurate - the downtime comes after the deployment when everything breaks.",
+    "joke": "Zero downtime deployments are technically accurate, the downtime comes after the deployment when everything breaks.",
     "punchline": ""
   }
 ]
