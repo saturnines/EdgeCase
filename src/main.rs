@@ -31,7 +31,7 @@ async fn joke() -> Json<Value> {
     let jokes = &*JOKES;
 
     let joke = jokes
-        .choose(&mut rand::thread_rng()) // Use thread_rng() instead of rng()
+        .choose(&mut rand::rng()) // Use thread_rng() instead of rng()
         .cloned()
         .unwrap_or_else(|| Joke {
             id: 0,
