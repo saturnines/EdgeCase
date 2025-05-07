@@ -1,0 +1,40 @@
+name: Deploy EdgeCase
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          script: |
+            # Go to project directory (create if it doesn't exist)
+            mkdir -p ~/edgecase
+            cd ~/edgecase
+            
+            # Clone or pull the latest code
+            if [ -d .git ]; then
+              git pull
+            else
+              git clone https://github.com/yourusername/edgecase.git .
+            fi
+            
+            # Build and run Docker container
+            docker build -t edgecase .
+            docker stop edgecase-container || true
+            docker rm edgecase-container || true
+            docker run -d -p 3000:3000 --name edgecase-container --restart unless-stopped edgecase
+            
+            # Clean up old images to save space
+            docker image prune -f
