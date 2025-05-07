@@ -22,7 +22,7 @@ EdgeCase is a simple Rust API serving, "humor" about software development, cloud
 
 
 ```bash
-curl jokes.kevinsapi.net/joke
+curl -L jokes.kevinsapi.net/joke
 ```
 
 For now just read jokes.json
