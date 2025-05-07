@@ -25,8 +25,8 @@ static JOKES: Lazy<Arc<Vec<Joke>>> = Lazy::new(|| {
         .expect("JSON was not formatted correctly");
     Arc::new(jokes)
 });
-//
-// Use preloaded jokes
+
+
 async fn joke() -> Json<Value> {
     let jokes = &*JOKES;
 
