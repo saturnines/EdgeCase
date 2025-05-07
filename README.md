@@ -19,10 +19,10 @@ EdgeCase is a simple Rust API serving, "humor" about software development, cloud
 
 ## Usage
 
-When deployed:
+
 
 ```bash
-curl Kevins.api.net/joke
+curl jokes.kevinsapi.net/joke
 ```
 
 For now just read jokes.json
