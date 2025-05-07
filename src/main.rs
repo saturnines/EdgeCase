@@ -1,26 +1,23 @@
 use axum::{routing::get, Json, Router};
 use serde::{Deserialize, Serialize};
-use std::{env,fs};
+use std::{env, fs};
 use dotenv::dotenv;
 use tokio::net::TcpListener;
-use rand::seq::{IndexedRandom};
 use serde_json::Value;
 use std::sync::Arc;
 use once_cell::sync::Lazy;
-
+use rand::seq::IndexedRandom;
 
 // Joke Structure
 #[derive(Deserialize, Serialize, Clone)]
-
-
-// Ideally Punchline should never be used but just in case.,
 struct Joke {
-    id:usize,
+    id: usize,
     contributor: String,
     joke: String,
     punchline: String
 }
 
+// Load JSON
 static JOKES: Lazy<Arc<Vec<Joke>>> = Lazy::new(|| {
     let json_content = fs::read_to_string("jokes.json")
         .expect("Could not read jokes.json or jokes.json doesn't exist!");
@@ -29,17 +26,12 @@ static JOKES: Lazy<Arc<Vec<Joke>>> = Lazy::new(|| {
     Arc::new(jokes)
 });
 
-
-// More like get observation lol
+// Use preloaded jokes
 async fn joke() -> Json<Value> {
-    let json_content = fs::read_to_string("jokes.json")
-        .expect("Could not read jokes.json or jokes.json doesn't exist!");
-
-    let jokes: Vec<Joke> = serde_json::from_str(&json_content)
-        .expect("JSON was not formatted correctly");
+    let jokes = &*JOKES;
 
     let joke = jokes
-        .choose(&mut rand::rng())
+        .choose(&mut rand::thread_rng()) // Use thread_rng() instead of rng()
         .cloned()
         .unwrap_or_else(|| Joke {
             id: 0,
@@ -56,11 +48,13 @@ async fn joke() -> Json<Value> {
     Json(response)
 }
 
-
 #[tokio::main]
 async fn main() {
     dotenv().ok();
+
     
+    let _ = &*JOKES;
+    println!("Loaded {} jokes", JOKES.len());
 
     let app = Router::new()
         .route("/joke", get(joke));
@@ -81,4 +75,3 @@ async fn main() {
     // Use the new serve function
     axum::serve(listener, app).await.unwrap();
 }
-
