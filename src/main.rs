@@ -5,6 +5,8 @@ use dotenv::dotenv;
 use tokio::net::TcpListener;
 use rand::seq::{IndexedRandom};
 use serde_json::Value;
+use std::sync::Arc;
+use once_cell::sync::Lazy;
 
 
 // Joke Structure
@@ -18,6 +20,15 @@ struct Joke {
     joke: String,
     punchline: String
 }
+
+static JOKES: Lazy<Arc<Vec<Joke>>> = Lazy::new(|| {
+    let json_content = fs::read_to_string("jokes.json")
+        .expect("Could not read jokes.json or jokes.json doesn't exist!");
+    let jokes: Vec<Joke> = serde_json::from_str(&json_content)
+        .expect("JSON was not formatted correctly");
+    Arc::new(jokes)
+});
+
 
 // More like get observation lol
 async fn joke() -> Json<Value> {
